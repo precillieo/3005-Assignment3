@@ -8,6 +8,7 @@ DB_HOST = "localhost"
 DB_PORT = "5432"
 
 def connect_db():
+    """Connects to the PostgreSQL database"""
     try: 
         connection = psycopg2.connect(
             dbname = DB_NAME,
@@ -22,6 +23,7 @@ def connect_db():
         return None
     
 def getAllStudents():
+    """Retrieves and displays all student records"""
     connection = connect_db()
     if connection:
         try: 
@@ -37,6 +39,7 @@ def getAllStudents():
             connection.close()
 
 def addStudent(first_name, last_name, email, enrollment_date):
+    """Inserts a new student record"""
     connection = connect_db()
     if connection:
         try:
@@ -52,6 +55,7 @@ def addStudent(first_name, last_name, email, enrollment_date):
             connection.close()
 
 def updateStudent(student_id, new_email):
+    """Updates the email address for a student"""
     connection = connect_db()
     if connection:
         try:
@@ -68,6 +72,7 @@ def updateStudent(student_id, new_email):
             connection.close()
 
 def deleteStudent(student_id):
+    """Deletes a student record"""
     connection = connect_db()
     if connection:
         try:
