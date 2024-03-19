@@ -21,12 +21,12 @@ def connect_db():
         print("Connection Error: ", e)
         return None
     
-#quick test
-connection = connect_db()
-if connection:
-    print("Connection Successful")
-else:
-    print("Connection Failed")
+# #quick test
+# connection = connect_db()
+# if connection:
+#     print("Connection Successful")
+# else:
+#     print("Connection Failed")
 
 def getAllStudents():
     connection = connect_db()
@@ -90,8 +90,8 @@ def deleteStudent(student_id):
             connection.close()
 
 # To test the functions
-# getAllStudents()
+#getAllStudents()
 # addStudent("Precious", "Kolawole", "pk@example.com", "2021-09-01")
-# updateStudent(1, "john.doe.updated@example.com")
-# deleteStudent(2)
+updateStudent(1, "john.doe@example.com")
+#deleteStudent(4)
 
