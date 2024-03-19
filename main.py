@@ -21,13 +21,6 @@ def connect_db():
         print("Connection Error: ", e)
         return None
     
-# #quick test
-# connection = connect_db()
-# if connection:
-#     print("Connection Successful")
-# else:
-#     print("Connection Failed")
-
 def getAllStudents():
     connection = connect_db()
     if connection:
