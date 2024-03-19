@@ -3,7 +3,7 @@ import psycopg2
 #Initialize Connection to the Database
 DB_NAME = "University"
 DB_USER = "postgres"
-DB_PASSWORD = "Oluwakemi@666"
+DB_PASSWORD = "****"
 DB_HOST = "localhost"
 DB_PORT = "5432"
 
